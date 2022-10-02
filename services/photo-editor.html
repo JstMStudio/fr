@@ -406,81 +406,90 @@ br{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
-<div class="sidebar">
+  <div class="sidebar">
     <div class="logo-details">
-        <div class="logo_name">JstMStudio</div>
+        <div class="logo_name">Jst polyvalent lieu de travail</div>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
       <li>
         <a href="home.html">
           <i class='bx bx-home'></i>
-          <span class="links_name">Home</span>
+          <span class="links_name">Accueil</span>
         </a>
-         <span class="tooltip">Home</span>
+         <span class="tooltip">Accueil</span>
       </li>
       <li>
        <a href="about.html">
          <i class='bx bx-info-circle'></i>
-         <span class="links_name">About</span>
+         <span class="links_name">À propos</span>
        </a>
-       <span class="tooltip">About</span>
+       <span class="tooltip">À propos</span>
+     </li>
+     <li>
+     <li>
+       <a href="documentation.html">
+         <i class='bx bxs-info-square'></i>
+         <span class="links_name">Documentation</span>
+       </a>
+       <span class="tooltip">Documentation</span>
+     </li>
+     <li>
+     <li>
+       <a href="projet.html">
+         <i class='bx bxs-briefcase-alt-2'></i>
+         <span class="links_name">Projet</span>
+       </a>
+       <span class="tooltip">Projet</span>
      </li>
      <li>
        <a href="client.html">
-        <i class='bx bx-log-in'></i>
+        <i class='bx bx-user'></i>
          <span class="links_name">Client</span>
        </a>
        <span class="tooltip">Client</span>
      </li>
      <li>
-        <a href="tool.html">
-          <i class='bx bx-box'></i>
-          <span class="links_name">Tools</span>
-        </a>
-        <span class="tooltip">Tools</span>
-      </li>
+       <a href="web-app.html">
+        <i class='bx bx-log-in'></i>
+         <span class="links_name">Application Web</span>
+       </a>
+       <span class="tooltip">Application Web</span>
+     </li>
       <li>
-        <a href="information.html">
-          <i class='bx bxs-info-circle' ></i>
-          <span class="links_name">Information</span>
-        </a>
-        <span class="tooltip">Information</span>
-      </li>
-      <li>
-      <li>
-        <a href="editor.html">
-          <i class='bx bx-edit-alt' ></i>
-          <span class="links_name">Editor</span>
-        </a>
-        <span class="tooltip">Editor</span>
-      </li>
-      <li>
-        <a href="search-engine.html">
-          <i class='bx bx-search-alt-2' ></i>
-          <span class="links_name">Search Engine</span>
-        </a>
-        <span class="tooltip">Search</span>
-      </li>
+       <a href="api.html">
+         <i class='bx bx-extension'></i>
+         <span class="links_name">API</span>
+       </a>
+       <span class="tooltip">API</span>
+     </li>
+     <li>
+       <a href="store.html">
+         <i class='bx bx-store-alt'></i>
+         <span class="links_name">Magasin</span>
+       </a>
+       <span class="tooltip">Magasin</span>
+     </li>
+     <li>
     </ul>
   </div>
       
     <section class="home-section">
 <div class="sidebar1" style="padding:10px;margin-left:50px;">
      <div class="image_filters">
-        <h2 type="button" data-toggle="collapse" data-target="#filters">Image Filters <span class="drop-down">&#9660;</span></h2>
+        <h2 type="button" data-toggle="collapse" data-target="#filters">Filtres d'images <span class="drop-down">&#9660;</span></h2>
         <div class="collapse" id="filters">
-          <button class='btn btn-primary' id="btn" style="font-size: 25px;" onclick="grayscale()">GrayScale</button>
+          <bouton class='btn btn-primary' id="btn" style="font-size : 25px ;" onclick="grayscale()">Niveaux de gris</button>
           
-          <button class='btn btn-primary' id="btn" style="font-size: 25px;" onclick="bright()">Brighen</button>
+          <bouton class='btn btn-primary' id="btn" style="font-size : 25px ;" onclick="bright()">Éclairer</bouton>
           <br>
           <br>
-          <button class='btn btn-primary' id="btn" style="font-size: 25px;" onclick="dark()">Darken</button>
-          <button class="btn btn-primary" id="btn" style="font-size: 25px;" onclick="blur_effect()">Blur Effect</button>
+          <bouton class='btn btn-primary' id="btn" style="font-size : 25px ;" onclick="dark()">Assombrir</button>
+          <bouton class="btn btn-primary" id="btn" style="font-size : 25px ;" onclick="blur_effect()">Effet de flou</button>
           <br>
           <br>
-          <button class='btn btn-primary' id="btn" style="font-size: 25px;" onclick="emboss()">Emboss</button>
-          <button class='btn btn-primary' id="btn" style="font-size: 25px;" onclick="sharp()">Sharpen</button>
+          <bouton class='btn btn-primary' id="btn" style="font-size : 25px ;" onclick="emboss()">Embosser</bouton>
+          <bouton class='btn btn-primary' id="btn" style="font-size : 25px ;" onclick="sharp()">Affûter</bouton>
         </div>
         <div class="breaks">
           <br>
@@ -488,14 +497,14 @@ br{
         </div>
      </div>
      <div class="import_and_export">
-       <h2 type="button" data-toggle="collapse" data-target="#import_export">Import and Export <span class="drop-down">&#9660;</span></h2>
+       <h2 type="button" data-toggle="collapse" data-target="#import_export">Importer et exporter <span class="drop-down">&#9660 ;</span></h2>
        <div class="import_and_export_buttons">
          <div class="collapse" id="import_export">
-          <div class="btn btn-primary" style="font-size: 25px;" onclick="selectImage()">
+          <div class="btn btn-primary" style="font-size : 25px ;" onclick="selectImage()">
             <input type="file" id="foto-file" accept="image/png"/>
-            Import Image
+            Importer une image
           </div>
-          <button class="btn btn-primary" style="font-size: 25px;" onclick="download()">Export Image</button>
+          <bouton class="btn btn-primary" style="font-size : 25px ;" onclick="download()">Exporter l'image</bouton>
         </div>
        </div>
      </div>
@@ -504,14 +513,14 @@ br{
         <br>
       </div>
       <div class="edit">
-        <h2 type="button" data-toggle="collapse" data-target="#edit">Editing <span class="drop-down">&#9660;</span></h2>
+        <h2 type="button" data-toggle="collapse" data-target="#edit">Modification <span class="drop-down">&#9660;</span></h2>
         <div class="collapse" id="edit">
-          <button class="btn btn-primary" style="font-size: 25px;" id="btn" onclick="crop()">Crop Image</button>
-          <button class="btn btn-primary" style="font-size: 25px;" id="btn" onclick="flip_img()">Flip Image</button>
+          <bouton class="btn btn-primary" style="font-size : 25px ;" id="btn" onclick="crop()">Recadrer l'image</bouton>
+          <bouton class="btn btn-primary" style="font-size : 25px ;" id="btn" onclick="flip_img()">Inverser l'image</button>
           <br><br>
-          <button class="btn btn-primary" onclick="makeTransparent()" style="font-size: 25px;" id="btn"><div id="color-preview"></div>Transparent</button>
+          <bouton class="btn btn-primary" onclick="makeTransparent()" style="font-size : 25px ;" id="btn"><div id="color-preview"></div>Transparent</button>
           <input type="color" id="colorize-color-picker" value="#00000" oninput="makeColorize(this)">
-          <button class="btn btn-primary" style="font-size: 25px;" id="btn" onclick="openColorPicker()">Colorize</button>
+          <bouton class="btn btn-primary" style="font-size : 25px ;" id="btn" onclick="openColorPicker()">Coloriser</button>
         </div>
       </div>
    </div>
