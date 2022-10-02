@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Compass</title>
+    <title>Boussole</title>
     <style>
       body {
         display: flex;
@@ -103,10 +103,10 @@
             if (response === "granted") {
               window.addEventListener("deviceorientation", handler, true);
             } else {
-              alert("has to be allowed!");
+              alert("Il faut le permettre !");
             }
           })
-          .catch(() => alert("not supported"));
+          .catch(() => alert("Non supporté"));
       }
     }
 
