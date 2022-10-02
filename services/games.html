@@ -11,7 +11,7 @@
   gtag('config', 'G-ZM4LK5K0LJ');
 </script>
     <link rel="stylesheet" href="style.css">
-    <title>Games</title>
+    <title>Jeux</title>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
@@ -733,25 +733,25 @@ background-color: black;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
-  <div class="sidebar">
+    <div class="sidebar">
     <div class="logo-details">
-        <div class="logo_name">JstMStudio</div>
+        <div class="logo_name">Jst polyvalent lieu de travail</div>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
       <li>
         <a href="home.html">
           <i class='bx bx-home'></i>
-          <span class="links_name">Home</span>
+          <span class="links_name">Accueil</span>
         </a>
-         <span class="tooltip">Home</span>
+         <span class="tooltip">Accueil</span>
       </li>
       <li>
        <a href="about.html">
          <i class='bx bx-info-circle'></i>
-         <span class="links_name">About</span>
+         <span class="links_name">À propos</span>
        </a>
-       <span class="tooltip">About</span>
+       <span class="tooltip">À propos</span>
      </li>
      <li>
      <li>
@@ -763,11 +763,11 @@ background-color: black;
      </li>
      <li>
      <li>
-       <a href="project.html">
+       <a href="projet.html">
          <i class='bx bxs-briefcase-alt-2'></i>
-         <span class="links_name">Project</span>
+         <span class="links_name">Projet</span>
        </a>
-       <span class="tooltip">Project</span>
+       <span class="tooltip">Projet</span>
      </li>
      <li>
        <a href="client.html">
@@ -779,9 +779,9 @@ background-color: black;
      <li>
        <a href="web-app.html">
         <i class='bx bx-log-in'></i>
-         <span class="links_name">Web App</span>
+         <span class="links_name">Application Web</span>
        </a>
-       <span class="tooltip">Web App</span>
+       <span class="tooltip">Application Web</span>
      </li>
       <li>
        <a href="api.html">
@@ -793,33 +793,33 @@ background-color: black;
      <li>
        <a href="store.html">
          <i class='bx bx-store-alt'></i>
-         <span class="links_name">Store</span>
+         <span class="links_name">Magasin</span>
        </a>
-       <span class="tooltip">Store</span>
+       <span class="tooltip">Magasin</span>
      </li>
      <li>
     </ul>
   </div>
   <section class="home-section">
     <ul class="breadcrumb">
-      <li><a href="/home.html">Website</a></li>
-      <li><a href="/web-app.html">Web App</a></li>
-      <li><a href="">Services</a></li>
-      <li>Games</li>
-    </ul>
-    <br>
-            <h1>Games</h1>
+      <li><a href="/home.html">Site Web</a></li>
+       <li><a href="/web-app.html">Application Web</a></li>
+       <li><a href="">Services</a></li>
+       <li>Jeux</li>
+     </ul>
+     <br>
+             <h1>Jeux</h1>
 <div>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for videos" title="Type in a name">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Rechercher des vidéos" title="Saisir un nom">
 <ul id="myUL">
-  <li><button type="button" class="collapsible">Auto Tic Tac Toe</button>
+   <li><button type="button" class="collapsible">Auto Tic Tac Toe</button>
 <div class="content">
 <div class="container">
-        <h1 style="color:green;">Autoplay Tic Tac Toe</h1>
+         <h1 style="color:green;">Lecture automatique de Tic Tac Toe</h1>
         <div class="play-area">
         </div>
         <h2 id="winner"></h2>
-        <button onclick="reset_board()">RESET</button>
+        <button onclick="reset_board()">RÉINITIALISER</button>
     </div>
   <script>
   const player = "O";
@@ -886,15 +886,15 @@ const check_match = () => {
 const check_for_winner = () => {
   let res = check_match()
   if (res == player) {
-    winner.innerText = "Winner is player!!";
+    winner.innerText = "Le gagnant est joueur !!";
     winner.classList.add("playerWin");
     board_full = true
   } else if (res == computer) {
-    winner.innerText = "Winner is computer";
+    winner.innerText = "Le gagnant est l'ordinateur !!";
     winner.classList.add("computerWin");
     board_full = true
   } else if (board_full) {
-    winner.innerText = "Draw!";
+    winner.innerText = "Dessiner!";
     winner.classList.add("draw");
   }
 };
@@ -949,17 +949,17 @@ render_board();
 </script>
 </div>
 </li>
-  <li><button type="button" class="collapsible">Guess the Word</button>
+  <li><button type="button" class="collapsible">Devinez le mot</button>
 <div class="content">
- <div class="wrapper1">
-      <h1>Guess the Word</h1>
-      <div class="content1">
-        <input type="text" class="typing-input" maxlength="1">
-        <div class="inputs"></div>
-        <div class="details">
-          <p class="hint">Hint: <span></span></p>
-          <p class="guess-left">Remaining guesses: <span></span></p>
-          <p class="wrong-letter">Wrong letters: <span></span></p>
+  <div class="wrapper1">
+       <h1>Devinez le mot</h1>
+       <div class="content1">
+         <input type="text" class="typing-input" maxlength="1">
+         <div class="inputs"></div>
+         <div class="details">
+           <p class="hint">Astuce : <span></span></p>
+           <p class="guess-left">Conjectures restantes : <span></span></p>
+           <p class="wrong-letter">Mauvaises lettres : <span></span></p>
         </div>
         <button class="reset-btn">Reset Game</button>
       </div>
@@ -1268,8 +1268,8 @@ function myFunction() {
   <br><br>
   <hr>
     <br>
-    <h1>Themes</h1>
-  <p>You could customise the themes of JstMStudio into a colour that you prefer. Select and choose from the color set below to make JstMStudio UI into your color preference.</p>
+<h1>Thèmes</h1>
+<p>Vous pouvez personnaliser les thèmes de Jst polyvalent lieu de travail dans une couleur que vous préférez. Sélectionnez et choisissez parmi le jeu de couleurs ci-dessous pour faire de l'interface utilisateur de Jst polyvalent lieu de travail votre préférence de couleur.</p>
   <br>
   <div style="float:left;text-align:center;padding:10px;">
   <button onclick="myFunction()" style="background-color: black;" class="button2"></button>
