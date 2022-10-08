@@ -597,6 +597,20 @@ text-align: center;
   font-size: 15px;
   font-weight: bold;
 }
+
+.collapsible1 {
+  background-color: yellow;
+  color: red;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+
 .content1 {
   padding: 0 18px;
   display: none;
@@ -937,10 +951,10 @@ function myFunction12() {
 </div>
 
 <div id="Guilded" class="tabcontent">
-<h1>Guildé</h1>
+<h1>Guilded</h1>
   <p>Bienvenue dans la section Guilded de Discoserver ! Un endroit pour explorer et trouver des tonnes de bots Guilded et de serveurs communautaires. Un endroit à explorer pour plus de communautés dont vous n'avez jamais entendu parler. </p>
   <br>
-  <button type="button" class="collapsible">Serveurs</button>
+  <button type="button" class="collapsible1">Serveurs</button>
 <div class="content1">
 <p>Nous connectons les utilisateurs et le serveur ensemble pour former un serveur communautaire actif. Un endroit où les utilisateurs rencontrent un serveur avec le créneau qu'ils aiment ou veulent.</p><br>
 <input type="text" id="myInput3" onkeyup="myFunction13()" placeholder="Rechercher le nom du serveur.." title="Tapez un nom" style="background-color:blue;color:orange; ">
@@ -962,7 +976,7 @@ function myFunction12() {
   <li><div><a href="#">Aucun</a>a</div></li>
 </ul>
 <script>
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("collapsible1");
 var i;
 
 for (i = 0; i < coll.length; i++) {
